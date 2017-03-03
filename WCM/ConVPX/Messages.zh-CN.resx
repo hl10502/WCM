@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FREE_SPACE" xml:space="preserve">
+    <value>{0} 可用 [{1:0.00}%]</value>
+  </data>
+  <data name="DISK_WRITE_BYTES" xml:space="preserve">
+    <value>{0:0.00} GB</value>
+  </data>
+  <data name="FREE_SPACE2" xml:space="preserve">
+    <value>{0} 可用</value>
+  </data>
+  <data name="CANCEL_JOB_MENU_ITEM" xml:space="preserve">
+    <value>取消任务...</value>
+  </data>
+  <data name="VERSION_NUMBER" xml:space="preserve">
+    <value>{0}.{1}.{2} (build {3})</value>
+  </data>
+  <data name="INVALID_PARAMETER" xml:space="preserve">
+    <value>无效参数!</value>
+  </data>
+  <data name="NODE_NETWORK_MAPPINGS" xml:space="preserve">
+    <value>网络映射</value>
+  </data>
+  <data name="NODE_PRESERVE_MAC" xml:space="preserve">
+    <value>保留 MAC [{0}]</value>
+  </data>
+  <data name="APPLICATION_NAME" xml:space="preserve">
+    <value>WinServer Conversion Manager</value>
+  </data>
+  <data name="NODE_DEST_SERVER" xml:space="preserve">
+    <value>目标 WinServer 主机</value>
+  </data>
+  <data name="MESSAGEBOX_LOAD_CORRUPTED_TITLE" xml:space="preserve">
+    <value>无法保存设置</value>
+  </data>
+  <data name="SR_SIZE_FREE" xml:space="preserve">
+    <value>存储池 '{0}' 可用存储 '{1}' </value>
+  </data>
+  <data name="DESTINATION_FORMAT" xml:space="preserve">
+    <value>存储池 '{0}' 在主机 '{1}'上</value>
+  </data>
+  <data name="MESSAGEBOX_HELP_TOPIC_NOT_FOUND" xml:space="preserve">
+    <value>帮助主题 {0} 不存在</value>
+  </data>
+  <data name="VM_TEMPLATE_DISPLAY_NAME" xml:space="preserve">
+    <value>{0} (模板)</value>
+  </data>
+  <data name="NO_VMS_DETECTED_ON_SERVER" xml:space="preserve">
+    <value>指定主机上没有检测到虚拟机</value>
+  </data>
+  <data name="NETWORK_READ_BYTES" xml:space="preserve">
+    <value>{0:0.00} GB 已压缩</value>
+  </data>
+  <data name="NODE_VIRTUAL_MACHINES" xml:space="preserve">
+    <value>虚拟机 (总数 = {0})</value>
+  </data>
+  <data name="WIZARD_SR_SELECTION_TITLE" xml:space="preserve">
+    <value>请选择存储虚拟磁盘的存储池</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="NODE_NETWORK_OPTIONS" xml:space="preserve">
+    <value>网络</value>
+  </data>
+  <data name="JOB_NAME" xml:space="preserve">
+    <value>任务名称</value>
+  </data>
+  <data name="NODE_SOURCE_SERVER" xml:space="preserve">
+    <value>源 VMware 主机</value>
+  </data>
+  <data name="ERROR_NO_XENSERVER" xml:space="preserve">
+    <value>不能找到WinServer主机：'{0}'，检查配置并再试一次</value>
+  </data>
+  <data name="JOB_ID" xml:space="preserve">
+    <value>任务ID</value>
+  </data>
+  <data name="CONVPX_VMSTATE_RUNNING" xml:space="preserve">
+    <value>运行中</value>
+  </data>
+  <data name="VM_COUNT" xml:space="preserve">
+    <value>选择的虚拟机总数： {0}</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_VMS" xml:space="preserve">
+    <value>正在获取VMware信息，请稍候…</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_USERABORTED" xml:space="preserve">
+    <value>已取消</value>
+  </data>
+  <data name="MINUTES_LABEL" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="RETRY_JOB_CONFIRM" xml:space="preserve">
+    <value>重试任务 [{0}]? 此操作将启动选定的任务</value>
+  </data>
+  <data name="XENSERVER_VERSION_NOT_SUPPORTED" xml:space="preserve">
+    <value>WinServer 版本不支持，请更新版本</value>
+  </data>
+  <data name="ERROR_NO_HOSTS_AVAILABLE" xml:space="preserve">
+    <value>没有足够的内存在WinServer主机或资源池上运行“WCM Virtual Appliance”</value>
+  </data>
+  <data name="MESSAGEBOX_LOAD_CORRUPTED" xml:space="preserve">
+    <value>无法保存设置。你可能没有足够的磁盘空间或配置文件可能损坏，
+修复损坏的配置文件恢复到user.config或删除文件恢复到默认值。</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_STORAGE_INFO" xml:space="preserve">
+    <value>正在获取WinServer存储信息，请稍候…</value>
+  </data>
+  <data name="ERROR_NOT_FOUND" xml:space="preserve">
+    <value>主机：'{0}' 没有被找到</value>
+  </data>
+  <data name="GET_VMS_FAILED" xml:space="preserve">
+    <value>无法发现VMware虚拟机，请查看应用程序日志文件</value>
+  </data>
+  <data name="WIZARD_CONNECTION_ATTEMPT_MESSAGE" xml:space="preserve">
+    <value>连接VMware获取虚拟机信息，这可能需要几分钟。请等待…</value>
+  </data>
+  <data name="CONNECTION_REQUIRED_FOR_SERVER_LOG" xml:space="preserve">
+    <value>一个winserver主机连接需要包括WCM appliance日志文件。此日志文件将不包括在zip文件输出</value>
+  </data>
+  <data name="ELAPSED_TIME_IN_MINUTES" xml:space="preserve">
+    <value>{0:g} {1}</value>
+  </data>
+  <data name="INVALID_ACTION" xml:space="preserve">
+    <value>无效操作!</value>
+  </data>
+  <data name="SECONDS_LABEL" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_NETWORK_INFO" xml:space="preserve">
+    <value>已获取WinServer网络信息</value>
+  </data>
+  <data name="CREATE_JOBS_FAILURE" xml:space="preserve">
+    <value>检测到一个任务创建失败，详情请参阅应用日志文件</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_COMPLETED" xml:space="preserve">
+    <value>完成</value>
+  </data>
+  <data name="WIZARD_VM_SELECTION_TEXT" xml:space="preserve">
+    <value>虚拟机</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_RUNNING" xml:space="preserve">
+    <value>运行中</value>
+  </data>
+  <data name="CANCEL_JOB_CONFIRM" xml:space="preserve">
+    <value>取消任务 [{0}]?  此操作将中止当前的运行任务</value>
+  </data>
+  <data name="WIZARD_NETWORK_OPTIONS_TITLE" xml:space="preserve">
+    <value>请使用WinServer网络来关联VMware网络 </value>
+  </data>
+  <data name="CONVPX_VMSTATE_OFF" xml:space="preserve">
+    <value>已关机</value>
+  </data>
+  <data name="NO_DETECTED_SRS" xml:space="preserve">
+    <value>主机上没有检测到存储池</value>
+  </data>
+  <data name="VM_NAME" xml:space="preserve">
+    <value>虚拟机名称</value>
+  </data>
+  <data name="SOLUTION_CHECK_XENSERVER" xml:space="preserve">
+    <value>检查 WinServer：'{0}' 的配置是否正确</value>
+  </data>
+  <data name="CONVERT_VM_WIZARD_TITLE" xml:space="preserve">
+    <value>WinServer Conversion Manager - VMware虚拟机转换到WinServer主机</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_STORAGE_INFO" xml:space="preserve">
+    <value>已获取WinServer存储信息</value>
+  </data>
+  <data name="NO_JOBS_SELECTED" xml:space="preserve">
+    <value>没有任务被选择!</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="NOT_ENOUGH_FREE_SPACE" xml:space="preserve">
+    <value>选择的虚拟机磁盘大小已超过存储池的可用大小!</value>
+  </data>
+  <data name="SOLUTION_NO_PERMISSION" xml:space="preserve">
+    <value>再次尝试更多的特权的用户帐户</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_SUSPENDED" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="CONVERSION_JOB_FAILED" xml:space="preserve">
+    <value>无法创建转换任务，详情请参阅日志文件</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_NETWORK_INFO" xml:space="preserve">
+    <value>正在获取WinServer网络信息，请稍候…</value>
+  </data>
+  <data name="USED_SPACE" xml:space="preserve">
+    <value>{0} 已使用 [{1:0.00}%]</value>
+  </data>
+  <data name="ERROR_HOST_STILL_BOOTING" xml:space="preserve">
+    <value>WinServer仍然引导中</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="VM_POWER_STATE" xml:space="preserve">
+    <value>电源状态</value>
+  </data>
+  <data name="CONNECT_CONNECTION_FAILURE" xml:space="preserve">
+    <value>不能连接主机 '{0}'： 连接被拒绝</value>
+  </data>
+  <data name="MESSAGEBOX_HELP_TOPICS" xml:space="preserve">
+    <value>正在启动帮助主题 {0} ({1}).</value>
+  </data>
+  <data name="MESSAGEBOX_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="SERVER_FAILURE" xml:space="preserve">
+    <value>主机失败： {0}</value>
+  </data>
+  <data name="UNABLE_TO_EXECUTE_ACTION" xml:space="preserve">
+    <value>WinServer Conversion Manager - 无法执行操作</value>
+  </data>
+  <data name="WIZARD_CONNECTION_SUCCESS_MESSAGE" xml:space="preserve">
+    <value>从 [{0}] 已获取VMware虚拟机信息，单击“下一步”继续</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_VMS" xml:space="preserve">
+    <value>已获取VMware信息</value>
+  </data>
+  <data name="SOLUTION_AUTHENTICATION" xml:space="preserve">
+    <value>再次尝试使用正确的用户名和密码</value>
+  </data>
+  <data name="WIZARD_SELECT_NETWORK_PAGE_NO_AVAIL_NETWORKS" xml:space="preserve">
+    <value>没有可用的网络连接</value>
+  </data>
+  <data name="CONNECT_RESOLUTION_FAILURE" xml:space="preserve">
+    <value>不能找到 {0}.</value>
+  </data>
+  <data name="HOURS_LABEL" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_CREATED" xml:space="preserve">
+    <value>已创建</value>
+  </data>
+  <data name="SELECTED_SPACE" xml:space="preserve">
+    <value>{0} 已选择</value>
+  </data>
+  <data name="ERROR_NETWORK_GET_BLURB" xml:space="preserve">
+    <value>无法获得所有的网络设置</value>
+  </data>
+  <data name="PLEASE_WAIT_STARTING_APPLIANCE" xml:space="preserve">
+    <value>尝试连接到WinServer主机，这可能需要几分钟，请等待...</value>
+  </data>
+  <data name="WIZARD_SR_SELECTION_TEXT" xml:space="preserve">
+    <value>存储池</value>
+  </data>
+  <data name="USED_SPACE2" xml:space="preserve">
+    <value>{0} 已使用</value>
+  </data>
+  <data name="NODE_NETWORK_MAP_DISPLAY" xml:space="preserve">
+    <value>映射 '{0}' 到 '{1}'</value>
+  </data>
+  <data name="CONNECTION_REFUSED" xml:space="preserve">
+    <value>连接被拒绝</value>
+  </data>
+  <data name="DAYS_LABEL" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="SOLUTION_HOST_STILL_BOOTING" xml:space="preserve">
+    <value>请稍候再试一次</value>
+  </data>
+  <data name="VM_OSTYPE" xml:space="preserve">
+    <value>操作系统类型</value>
+  </data>
+  <data name="WIZARD_VM_SELECTION_TITLE" xml:space="preserve">
+    <value>请选择将要转换的虚拟机</value>
+  </data>
+  <data name="CONNECT_NO_XAPI_FAILURE" xml:space="preserve">
+    <value>找不到运行的WinServer主机： {0}</value>
+  </data>
+  <data name="WIZARD_NETWORK_OPTIONS_TEXT" xml:space="preserve">
+    <value>网络</value>
+  </data>
+  <data name="UNKNOWN_CONNECTION_ERROR" xml:space="preserve">
+    <value>无法连接到指定的主机</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_QUEUED" xml:space="preserve">
+    <value>队列</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_ABORTED" xml:space="preserve">
+    <value>失败</value>
+  </data>
+  <data name="SERVER_API_INCOMPATIBLE" xml:space="preserve">
+    <value>这台主机使用兼容WinCenter的API</value>
+  </data>
+  <data name="DIRECTORY_CHOOSER_LOG_DESCRIPTION" xml:space="preserve">
+    <value>选择一个文件夹来存储WCM支持文件</value>
+  </data>
+  <data name="ADD_NEW_INCORRECT" xml:space="preserve">
+    <value>用户名或密码不正确</value>
+  </data>
+  <data name="ERROR_NO_PERMISSION" xml:space="preserve">
+    <value>你没有被授权访问这台服务器</value>
+  </data>
+  <data name="TOTAL_ESTIMATED_DISK_SIZE_NEEDED" xml:space="preserve">
+    <value>选中的磁盘总大小： {0:0.00} GB</value>
+  </data>
+  <data name="MESSAGEBOX_PROGRAM_UNEXPECTED" xml:space="preserve">
+    <value>[{0}] 出现了一个意外错误。关于这个错误的技术细节已经保存下列文件。请发送给您的支持代表 {1}</value>
+  </data>
+  <data name="CONVERSION_APPLIANCE_PRODUCT_NAME" xml:space="preserve">
+    <value>Conversion Appliance</value>
+  </data>
+  <data name="CONVERSION_JOB_SUCCESS" xml:space="preserve">
+    <value>成功提交转换任务！</value>
+  </data>
+  <data name="NODE_SR" xml:space="preserve">
+    <value>存储池</value>
+  </data>
+  <data name="RETRY_JOB_MENU_ITEM" xml:space="preserve">
+    <value>重试任务...</value>
+  </data>
+  <data name="ERROR_CONNECTING_BLURB" xml:space="preserve">
+    <value>WinServer Conversion Manager 连接主机出现问题</value>
+  </data>
+  <data name="VM_DISK_SIZE" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="CLEAR_JOBS_CONFIRM" xml:space="preserve">
+    <value>清除任务? 警告：此操作将永久清除所有旧的任务在任务视图中显示</value>
+  </data>
+  <data name="CONVPX_VMSTATE_SUSPENDED" xml:space="preserve">
+    <value>挂起中</value>
+  </data>
+  <data name="MASTER_NEW_INCORRECT" xml:space="preserve">
+    <value>WinServer主节点主机{0}的用户名或密码不正确，请重新输入主节点主机IP、用户名、密码</value>
+  </data>
+  <data name="MASTER_NEW_CONNECT" xml:space="preserve">
+    <value>请输入{0}作为IP来连接WinServer主节点主机</value>
+  </data>
+  <data name="CONVERTING_STATUS" xml:space="preserve">
+    <value>转换</value>
+  </data>
+</root>

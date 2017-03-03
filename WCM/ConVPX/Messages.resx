@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FREE_SPACE" xml:space="preserve">
+    <value>{0} Free [{1:0.00}%]</value>
+  </data>
+  <data name="DISK_WRITE_BYTES" xml:space="preserve">
+    <value>{0:0.00} GB</value>
+  </data>
+  <data name="FREE_SPACE2" xml:space="preserve">
+    <value>{0} Free</value>
+  </data>
+  <data name="CANCEL_JOB_MENU_ITEM" xml:space="preserve">
+    <value>Cancel Job...</value>
+  </data>
+  <data name="VERSION_NUMBER" xml:space="preserve">
+    <value>{0}.{1}.{2} (build {3})</value>
+  </data>
+  <data name="INVALID_PARAMETER" xml:space="preserve">
+    <value>Invalid Parameter!</value>
+  </data>
+  <data name="NODE_NETWORK_MAPPINGS" xml:space="preserve">
+    <value>Network Mappings</value>
+  </data>
+  <data name="NODE_PRESERVE_MAC" xml:space="preserve">
+    <value>Preserve MAC [{0}]</value>
+  </data>
+  <data name="APPLICATION_NAME" xml:space="preserve">
+    <value>WinServer Conversion Manager</value>
+  </data>
+  <data name="NODE_DEST_SERVER" xml:space="preserve">
+    <value>Destination WinServer</value>
+  </data>
+  <data name="MESSAGEBOX_LOAD_CORRUPTED_TITLE" xml:space="preserve">
+    <value>Could Not Save Settings</value>
+  </data>
+  <data name="SR_SIZE_FREE" xml:space="preserve">
+    <value>'{0}' has '{1}' available</value>
+  </data>
+  <data name="DESTINATION_FORMAT" xml:space="preserve">
+    <value>SR '{0}' on server '{1}'</value>
+  </data>
+  <data name="MESSAGEBOX_HELP_TOPIC_NOT_FOUND" xml:space="preserve">
+    <value>Help topic {0} does not exist.</value>
+  </data>
+  <data name="VM_TEMPLATE_DISPLAY_NAME" xml:space="preserve">
+    <value>{0} (Template)</value>
+  </data>
+  <data name="NO_VMS_DETECTED_ON_SERVER" xml:space="preserve">
+    <value>No virtual machines detected on specified server.</value>
+  </data>
+  <data name="NETWORK_READ_BYTES" xml:space="preserve">
+    <value>{0:0.00} compressed GB</value>
+  </data>
+  <data name="NODE_VIRTUAL_MACHINES" xml:space="preserve">
+    <value>Virtual Machines (Total = {0})</value>
+  </data>
+  <data name="WIZARD_SR_SELECTION_TITLE" xml:space="preserve">
+    <value>Select the storage repository for virtual-disk storage.</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="NODE_NETWORK_OPTIONS" xml:space="preserve">
+    <value>Networks</value>
+  </data>
+  <data name="JOB_NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NODE_SOURCE_SERVER" xml:space="preserve">
+    <value>Source VMware Server </value>
+  </data>
+  <data name="ERROR_NO_XENSERVER" xml:space="preserve">
+    <value>Could not find WinServer on '{0}'.  Check configuration and try again.</value>
+  </data>
+  <data name="JOB_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CONVPX_VMSTATE_RUNNING" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="VM_COUNT" xml:space="preserve">
+    <value>Total selected VMs: {0}</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_VMS" xml:space="preserve">
+    <value>Collecting information about the VMware environment, please wait…</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_USERABORTED" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="MINUTES_LABEL" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="RETRY_JOB_CONFIRM" xml:space="preserve">
+    <value>Retry job [{0}]?  This action starts the selected job.</value>
+  </data>
+  <data name="XENSERVER_VERSION_NOT_SUPPORTED" xml:space="preserve">
+    <value>WinServer version is not supported.  Please upgrade.</value>
+  </data>
+  <data name="ERROR_NO_HOSTS_AVAILABLE" xml:space="preserve">
+    <value>There is not enough memory on the WinServer host or pool to run the 'Winhong WCM Virtual Appliance'</value>
+  </data>
+  <data name="MESSAGEBOX_LOAD_CORRUPTED" xml:space="preserve">
+    <value>Unable to save settings. You may have insufficient disk space or your configuration file could be corrupt. 
+
+To fix a corrupt configuration file revert changes to user.config or delete the file to return to default values.</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_STORAGE_INFO" xml:space="preserve">
+    <value>Collecting information about the WinServer storage environment, please wait...</value>
+  </data>
+  <data name="ERROR_NOT_FOUND" xml:space="preserve">
+    <value>The server '{0}' could not be found.</value>
+  </data>
+  <data name="GET_VMS_FAILED" xml:space="preserve">
+    <value>Unable to discover VMware virtual machines using the provided credentials.  Please see application log file for results.</value>
+  </data>
+  <data name="WIZARD_CONNECTION_ATTEMPT_MESSAGE" xml:space="preserve">
+    <value>Collecting setup information.  This could take several minutes.  Please wait…</value>
+  </data>
+  <data name="CONNECTION_REQUIRED_FOR_SERVER_LOG" xml:space="preserve">
+    <value>A connection to a WinServer host is required to include the WCM appliance log file.  This log file will not be included in the zip output file.</value>
+  </data>
+  <data name="ELAPSED_TIME_IN_MINUTES" xml:space="preserve">
+    <value>{0:g} {1}</value>
+  </data>
+  <data name="INVALID_ACTION" xml:space="preserve">
+    <value>Invalid action!</value>
+  </data>
+  <data name="SECONDS_LABEL" xml:space="preserve">
+    <value>seconds</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_NETWORK_INFO" xml:space="preserve">
+    <value>WinServer network environment information collected.</value>
+  </data>
+  <data name="CREATE_JOBS_FAILURE" xml:space="preserve">
+    <value>A job creation failure was detected.  Please see the application log file for details.</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_COMPLETED" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="WIZARD_VM_SELECTION_TEXT" xml:space="preserve">
+    <value>Virtual Machines</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_RUNNING" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="CANCEL_JOB_CONFIRM" xml:space="preserve">
+    <value>Cancel job [{0}]?  This action aborts the current running job.</value>
+  </data>
+  <data name="WIZARD_NETWORK_OPTIONS_TITLE" xml:space="preserve">
+    <value>Associate VMware networks with WinServer networks.</value>
+  </data>
+  <data name="CONVPX_VMSTATE_OFF" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="NO_DETECTED_SRS" xml:space="preserve">
+    <value>No storage repositories detected on server.</value>
+  </data>
+  <data name="VM_NAME" xml:space="preserve">
+    <value>VM Name</value>
+  </data>
+  <data name="SOLUTION_CHECK_XENSERVER" xml:space="preserve">
+    <value>Check that WinServer is configured correctly on '{0}' and try again.</value>
+  </data>
+  <data name="CONVERT_VM_WIZARD_TITLE" xml:space="preserve">
+    <value>{0} Conversion Manager - VMware to {1} Conversion</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_STORAGE_INFO" xml:space="preserve">
+    <value>WinServer storage environment information collected.</value>
+  </data>
+  <data name="NO_JOBS_SELECTED" xml:space="preserve">
+    <value>No jobs selected!</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="NOT_ENOUGH_FREE_SPACE" xml:space="preserve">
+    <value>The selected space has exceeded the free space!</value>
+  </data>
+  <data name="SOLUTION_NO_PERMISSION" xml:space="preserve">
+    <value>Try again with a more privileged user account.</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_SUSPENDED" xml:space="preserve">
+    <value>Suspended</value>
+  </data>
+  <data name="CONVERSION_JOB_FAILED" xml:space="preserve">
+    <value>Unable to create conversion job.  Please see log file for details.</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTING_NETWORK_INFO" xml:space="preserve">
+    <value>Collecting information about the WinServer network environment, please wait...</value>
+  </data>
+  <data name="USED_SPACE" xml:space="preserve">
+    <value>{0} Used [{1:0.00}%]</value>
+  </data>
+  <data name="ERROR_HOST_STILL_BOOTING" xml:space="preserve">
+    <value>WinServer is still booting.</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="VM_POWER_STATE" xml:space="preserve">
+    <value>Power State</value>
+  </data>
+  <data name="CONNECT_CONNECTION_FAILURE" xml:space="preserve">
+    <value>Unable to connect to server '{0}'.  Connection refused.</value>
+  </data>
+  <data name="MESSAGEBOX_HELP_TOPICS" xml:space="preserve">
+    <value>Launching help topic {0} ({1}).</value>
+  </data>
+  <data name="MESSAGEBOX_CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="SERVER_FAILURE" xml:space="preserve">
+    <value>Server failure: {0}</value>
+  </data>
+  <data name="UNABLE_TO_EXECUTE_ACTION" xml:space="preserve">
+    <value>WinServer Conversion Manager - Unable to execute action</value>
+  </data>
+  <data name="WIZARD_CONNECTION_SUCCESS_MESSAGE" xml:space="preserve">
+    <value>Setup information collected from [{0}].  Click Next to continue.</value>
+  </data>
+  <data name="WIZARD_STATUS_COLLECTED_VMS" xml:space="preserve">
+    <value>VMware environment information collected.</value>
+  </data>
+  <data name="SOLUTION_AUTHENTICATION" xml:space="preserve">
+    <value>Try again using a correct Username and Password.</value>
+  </data>
+  <data name="WIZARD_SELECT_NETWORK_PAGE_NO_AVAIL_NETWORKS" xml:space="preserve">
+    <value>No available networks to connect.</value>
+  </data>
+  <data name="CONNECT_RESOLUTION_FAILURE" xml:space="preserve">
+    <value>Could not find {0}.</value>
+  </data>
+  <data name="HOURS_LABEL" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_CREATED" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="SELECTED_SPACE" xml:space="preserve">
+    <value>{0} Selected</value>
+  </data>
+  <data name="ERROR_NETWORK_GET_BLURB" xml:space="preserve">
+    <value>Unable to obtain all network settings.</value>
+  </data>
+  <data name="PLEASE_WAIT_STARTING_APPLIANCE" xml:space="preserve">
+    <value>Attempting a connection to WinServer.  This could take several minutes.  Please wait...</value>
+  </data>
+  <data name="WIZARD_SR_SELECTION_TEXT" xml:space="preserve">
+    <value>Storage Repository</value>
+  </data>
+  <data name="USED_SPACE2" xml:space="preserve">
+    <value>{0} Used</value>
+  </data>
+  <data name="NODE_NETWORK_MAP_DISPLAY" xml:space="preserve">
+    <value>Map '{0}' to '{1}'</value>
+  </data>
+  <data name="CONNECTION_REFUSED" xml:space="preserve">
+    <value>The connection was refused.</value>
+  </data>
+  <data name="DAYS_LABEL" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="SOLUTION_HOST_STILL_BOOTING" xml:space="preserve">
+    <value>Please wait and then try again.</value>
+  </data>
+  <data name="VM_OSTYPE" xml:space="preserve">
+    <value>OS Type</value>
+  </data>
+  <data name="WIZARD_VM_SELECTION_TITLE" xml:space="preserve">
+    <value>Select the virtual machines to convert.</value>
+  </data>
+  <data name="CONNECT_NO_XAPI_FAILURE" xml:space="preserve">
+    <value>Could not find WinServer running on {0}.</value>
+  </data>
+  <data name="WIZARD_NETWORK_OPTIONS_TEXT" xml:space="preserve">
+    <value>Networks</value>
+  </data>
+  <data name="UNKNOWN_CONNECTION_ERROR" xml:space="preserve">
+    <value>Unable to connect to the specified server.  An unknown error occurred.</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_QUEUED" xml:space="preserve">
+    <value>Queued</value>
+  </data>
+  <data name="CONVPX_JOBSTATE_ABORTED" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="SERVER_API_INCOMPATIBLE" xml:space="preserve">
+    <value>This server is using an API that is incompatible with XenCenter.</value>
+  </data>
+  <data name="DIRECTORY_CHOOSER_LOG_DESCRIPTION" xml:space="preserve">
+    <value>Select a folder to store the WCM support file.</value>
+  </data>
+  <data name="ADD_NEW_INCORRECT" xml:space="preserve">
+    <value>Incorrect username and/or password.</value>
+  </data>
+  <data name="ERROR_NO_PERMISSION" xml:space="preserve">
+    <value>You are not authorized to access this server.</value>
+  </data>
+  <data name="TOTAL_ESTIMATED_DISK_SIZE_NEEDED" xml:space="preserve">
+    <value>Total selected disk size is: {0:0.00} GB</value>
+  </data>
+  <data name="MESSAGEBOX_PROGRAM_UNEXPECTED" xml:space="preserve">
+    <value>[{0}] There has been an unexpected error. Technical details about this error have been saved to the following file. Please send this to your support representative.
+
+{1}</value>
+  </data>
+  <data name="CONVERSION_APPLIANCE_PRODUCT_NAME" xml:space="preserve">
+    <value>Conversion Appliance</value>
+  </data>
+  <data name="CONVERSION_JOB_SUCCESS" xml:space="preserve">
+    <value>Successfully submitted conversion job!</value>
+  </data>
+  <data name="NODE_SR" xml:space="preserve">
+    <value>Storage Repository</value>
+  </data>
+  <data name="RETRY_JOB_MENU_ITEM" xml:space="preserve">
+    <value>Retry Job...</value>
+  </data>
+  <data name="ERROR_CONNECTING_BLURB" xml:space="preserve">
+    <value>WinServer Conversion Manager has encountered a problem connecting to this server.</value>
+  </data>
+  <data name="VM_DISK_SIZE" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="CLEAR_JOBS_CONFIRM" xml:space="preserve">
+    <value>Clear jobs? WARNING: This action will permanently clear all old jobs shown in the job summary view.</value>
+  </data>
+  <data name="CONVPX_VMSTATE_SUSPENDED" xml:space="preserve">
+    <value>Suspended</value>
+  </data>
+  <data name="MASTER_NEW_CONNECT" xml:space="preserve">
+    <value>Input WinServer master host {0}</value>
+  </data>
+  <data name="MASTER_NEW_INCORRECT" xml:space="preserve">
+    <value>WinServer master host {0}: Incorrect username and/or password.</value>
+  </data>
+  <data name="CONVERTING_STATUS" xml:space="preserve">
+    <value>Converting</value>
+  </data>
+</root>

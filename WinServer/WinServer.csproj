@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A00230DD-CD86-4348-A6D6-E77D2E40A11A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinServer</RootNamespace>
+    <AssemblyName>WinServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\CookComputing.XmlRpcV2(2.5.0.0)\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinAPI\after_apply_guidance.cs" />
+    <Compile Include="WinAPI\after_apply_guidance_helper.cs" />
+    <Compile Include="WinAPI\allocation_algorithm.cs" />
+    <Compile Include="WinAPI\allocation_algorithm_helper.cs" />
+    <Compile Include="WinAPI\API_Version.cs" />
+    <Compile Include="WinAPI\Auth.cs" />
+    <Compile Include="WinAPI\Blob.cs" />
+    <Compile Include="WinAPI\Bond.cs" />
+    <Compile Include="WinAPI\bond_mode.cs" />
+    <Compile Include="WinAPI\bond_mode_helper.cs" />
+    <Compile Include="WinAPI\cls.cs" />
+    <Compile Include="WinAPI\cls_helper.cs" />
+    <Compile Include="WinAPI\Console.cs" />
+    <Compile Include="WinAPI\console_protocol.cs" />
+    <Compile Include="WinAPI\console_protocol_helper.cs" />
+    <Compile Include="WinAPI\Crashdump.cs" />
+    <Compile Include="WinAPI\Data_source.cs" />
+    <Compile Include="WinAPI\DeprecatedAttribute.cs" />
+    <Compile Include="WinAPI\DR_task.cs" />
+    <Compile Include="WinAPI\Event.cs" />
+    <Compile Include="WinAPI\Events.cs" />
+    <Compile Include="WinAPI\Failure.cs" />
+    <Compile Include="WinAPI\FriendlyErrorNames.cs" />
+    <Compile Include="WinAPI\GPU_group.cs" />
+    <Compile Include="WinAPI\Helper.cs" />
+    <Compile Include="WinAPI\Host.cs" />
+    <Compile Include="WinAPI\host_allowed_operations.cs" />
+    <Compile Include="WinAPI\host_allowed_operations_helper.cs" />
+    <Compile Include="WinAPI\Host_cpu.cs" />
+    <Compile Include="WinAPI\Host_crashdump.cs" />
+    <Compile Include="WinAPI\host_display.cs" />
+    <Compile Include="WinAPI\host_display_helper.cs" />
+    <Compile Include="WinAPI\Host_metrics.cs" />
+    <Compile Include="WinAPI\Host_patch.cs" />
+    <Compile Include="WinAPI\HTTP.cs" />
+    <Compile Include="WinAPI\HTTP_actions.cs" />
+    <Compile Include="WinAPI\IMockWebProxy.cs" />
+    <Compile Include="WinAPI\ipv6_configuration_mode.cs" />
+    <Compile Include="WinAPI\ipv6_configuration_mode_helper.cs" />
+    <Compile Include="WinAPI\ip_configuration_mode.cs" />
+    <Compile Include="WinAPI\ip_configuration_mode_helper.cs" />
+    <Compile Include="WinAPI\IXenObject.cs" />
+    <Compile Include="WinAPI\LVHD.cs" />
+    <Compile Include="WinAPI\Maps.cs" />
+    <Compile Include="WinAPI\Marshalling.cs" />
+    <Compile Include="WinAPI\Message.cs" />
+    <Compile Include="WinAPI\Network.cs" />
+    <Compile Include="WinAPI\network_default_locking_mode.cs" />
+    <Compile Include="WinAPI\network_default_locking_mode_helper.cs" />
+    <Compile Include="WinAPI\network_operations.cs" />
+    <Compile Include="WinAPI\network_operations_helper.cs" />
+    <Compile Include="WinAPI\on_boot.cs" />
+    <Compile Include="WinAPI\on_boot_helper.cs" />
+    <Compile Include="WinAPI\on_crash_behaviour.cs" />
+    <Compile Include="WinAPI\on_crash_behaviour_helper.cs" />
+    <Compile Include="WinAPI\on_normal_exit.cs" />
+    <Compile Include="WinAPI\on_normal_exit_helper.cs" />
+    <Compile Include="WinAPI\PBD.cs" />
+    <Compile Include="WinAPI\PCI.cs" />
+    <Compile Include="WinAPI\PGPU.cs" />
+    <Compile Include="WinAPI\pgpu_dom0_access.cs" />
+    <Compile Include="WinAPI\pgpu_dom0_access_helper.cs" />
+    <Compile Include="WinAPI\PIF.cs" />
+    <Compile Include="WinAPI\PIF_metrics.cs" />
+    <Compile Include="WinAPI\Pool.cs" />
+    <Compile Include="WinAPI\pool_allowed_operations.cs" />
+    <Compile Include="WinAPI\pool_allowed_operations_helper.cs" />
+    <Compile Include="WinAPI\Pool_patch.cs" />
+    <Compile Include="WinAPI\primary_address_type.cs" />
+    <Compile Include="WinAPI\primary_address_type_helper.cs" />
+    <Compile Include="WinAPI\Proxy.cs" />
+    <Compile Include="WinAPI\Proxy_Auth.cs" />
+    <Compile Include="WinAPI\Proxy_Blob.cs" />
+    <Compile Include="WinAPI\Proxy_Bond.cs" />
+    <Compile Include="WinAPI\Proxy_Console.cs" />
+    <Compile Include="WinAPI\Proxy_Crashdump.cs" />
+    <Compile Include="WinAPI\Proxy_Data_source.cs" />
+    <Compile Include="WinAPI\Proxy_DR_task.cs" />
+    <Compile Include="WinAPI\Proxy_Event.cs" />
+    <Compile Include="WinAPI\Proxy_GPU_group.cs" />
+    <Compile Include="WinAPI\Proxy_Host.cs" />
+    <Compile Include="WinAPI\Proxy_Host_cpu.cs" />
+    <Compile Include="WinAPI\Proxy_Host_crashdump.cs" />
+    <Compile Include="WinAPI\Proxy_Host_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_Host_patch.cs" />
+    <Compile Include="WinAPI\Proxy_LVHD.cs" />
+    <Compile Include="WinAPI\Proxy_Message.cs" />
+    <Compile Include="WinAPI\Proxy_Network.cs" />
+    <Compile Include="WinAPI\Proxy_PBD.cs" />
+    <Compile Include="WinAPI\Proxy_PCI.cs" />
+    <Compile Include="WinAPI\Proxy_PGPU.cs" />
+    <Compile Include="WinAPI\Proxy_PIF.cs" />
+    <Compile Include="WinAPI\Proxy_PIF_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_Pool.cs" />
+    <Compile Include="WinAPI\Proxy_Pool_patch.cs" />
+    <Compile Include="WinAPI\Proxy_Role.cs" />
+    <Compile Include="WinAPI\Proxy_Secret.cs" />
+    <Compile Include="WinAPI\Proxy_Session.cs" />
+    <Compile Include="WinAPI\Proxy_SM.cs" />
+    <Compile Include="WinAPI\Proxy_SR.cs" />
+    <Compile Include="WinAPI\Proxy_Subject.cs" />
+    <Compile Include="WinAPI\Proxy_Task.cs" />
+    <Compile Include="WinAPI\Proxy_Tunnel.cs" />
+    <Compile Include="WinAPI\Proxy_User.cs" />
+    <Compile Include="WinAPI\Proxy_VBD.cs" />
+    <Compile Include="WinAPI\Proxy_VBD_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_VDI.cs" />
+    <Compile Include="WinAPI\Proxy_VGPU.cs" />
+    <Compile Include="WinAPI\Proxy_VGPU_type.cs" />
+    <Compile Include="WinAPI\Proxy_VIF.cs" />
+    <Compile Include="WinAPI\Proxy_VIF_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_VLAN.cs" />
+    <Compile Include="WinAPI\Proxy_VM.cs" />
+    <Compile Include="WinAPI\Proxy_VMPP.cs" />
+    <Compile Include="WinAPI\Proxy_VM_appliance.cs" />
+    <Compile Include="WinAPI\Proxy_VM_guest_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_VM_metrics.cs" />
+    <Compile Include="WinAPI\Proxy_VTPM.cs" />
+    <Compile Include="WinAPI\Relation.cs" />
+    <Compile Include="WinAPI\Response.cs" />
+    <Compile Include="WinAPI\ResponseTypes.cs" />
+    <Compile Include="WinAPI\Role.cs" />
+    <Compile Include="WinAPI\Secret.cs" />
+    <Compile Include="WinAPI\Session.cs" />
+    <Compile Include="WinAPI\SM.cs" />
+    <Compile Include="WinAPI\SR.cs" />
+    <Compile Include="WinAPI\storage_operations.cs" />
+    <Compile Include="WinAPI\storage_operations_helper.cs" />
+    <Compile Include="WinAPI\Subject.cs" />
+    <Compile Include="WinAPI\Task.cs" />
+    <Compile Include="WinAPI\task_allowed_operations.cs" />
+    <Compile Include="WinAPI\task_allowed_operations_helper.cs" />
+    <Compile Include="WinAPI\task_status_type.cs" />
+    <Compile Include="WinAPI\task_status_type_helper.cs" />
+    <Compile Include="WinAPI\Tunnel.cs" />
+    <Compile Include="WinAPI\User.cs" />
+    <Compile Include="WinAPI\UserDetails.cs" />
+    <Compile Include="WinAPI\VBD.cs" />
+    <Compile Include="WinAPI\VBD_metrics.cs" />
+    <Compile Include="WinAPI\vbd_mode.cs" />
+    <Compile Include="WinAPI\vbd_mode_helper.cs" />
+    <Compile Include="WinAPI\vbd_operations.cs" />
+    <Compile Include="WinAPI\vbd_operations_helper.cs" />
+    <Compile Include="WinAPI\vbd_type.cs" />
+    <Compile Include="WinAPI\vbd_type_helper.cs" />
+    <Compile Include="WinAPI\VDI.cs" />
+    <Compile Include="WinAPI\vdi_operations.cs" />
+    <Compile Include="WinAPI\vdi_operations_helper.cs" />
+    <Compile Include="WinAPI\vdi_type.cs" />
+    <Compile Include="WinAPI\vdi_type_helper.cs" />
+    <Compile Include="WinAPI\VGPU.cs" />
+    <Compile Include="WinAPI\VGPU_type.cs" />
+    <Compile Include="WinAPI\vgpu_type_implementation.cs" />
+    <Compile Include="WinAPI\vgpu_type_implementation_helper.cs" />
+    <Compile Include="WinAPI\VIF.cs" />
+    <Compile Include="WinAPI\vif_locking_mode.cs" />
+    <Compile Include="WinAPI\vif_locking_mode_helper.cs" />
+    <Compile Include="WinAPI\VIF_metrics.cs" />
+    <Compile Include="WinAPI\vif_operations.cs" />
+    <Compile Include="WinAPI\vif_operations_helper.cs" />
+    <Compile Include="WinAPI\VLAN.cs" />
+    <Compile Include="WinAPI\VM.cs" />
+    <Compile Include="WinAPI\VMPP.cs" />
+    <Compile Include="WinAPI\vmpp_archive_frequency.cs" />
+    <Compile Include="WinAPI\vmpp_archive_frequency_helper.cs" />
+    <Compile Include="WinAPI\vmpp_archive_target_type.cs" />
+    <Compile Include="WinAPI\vmpp_archive_target_type_helper.cs" />
+    <Compile Include="WinAPI\vmpp_backup_frequency.cs" />
+    <Compile Include="WinAPI\vmpp_backup_frequency_helper.cs" />
+    <Compile Include="WinAPI\vmpp_backup_type.cs" />
+    <Compile Include="WinAPI\vmpp_backup_type_helper.cs" />
+    <Compile Include="WinAPI\VM_appliance.cs" />
+    <Compile Include="WinAPI\vm_appliance_operation.cs" />
+    <Compile Include="WinAPI\vm_appliance_operation_helper.cs" />
+    <Compile Include="WinAPI\VM_guest_metrics.cs" />
+    <Compile Include="WinAPI\VM_metrics.cs" />
+    <Compile Include="WinAPI\vm_operations.cs" />
+    <Compile Include="WinAPI\vm_operations_helper.cs" />
+    <Compile Include="WinAPI\vm_power_state.cs" />
+    <Compile Include="WinAPI\vm_power_state_helper.cs" />
+    <Compile Include="WinAPI\VTPM.cs" />
+    <Compile Include="WinAPI\XenObject.cs" />
+    <Compile Include="WinAPI\XenRef.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

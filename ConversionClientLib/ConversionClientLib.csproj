@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{911E3224-C315-4097-8BD8-58B60EB42211}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConversionClientLib</RootNamespace>
+    <AssemblyName>ConversionClientLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CookComputing.XmlRpcV2, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\CookComputing.XmlRpcV2(2.5.0.0)\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>E:\visual studio 2010\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonTypes\IConversion.cs" />
+    <Compile Include="CommonTypes\ImportInfo.cs" />
+    <Compile Include="CommonTypes\JobInfo.cs" />
+    <Compile Include="CommonTypes\JobInstance.cs" />
+    <Compile Include="CommonTypes\JobProgressData.cs" />
+    <Compile Include="CommonTypes\JobState.cs" />
+    <Compile Include="CommonTypes\MessageLevel.cs" />
+    <Compile Include="CommonTypes\NetworkInstance.cs" />
+    <Compile Include="CommonTypes\ServerInfo.cs" />
+    <Compile Include="CommonTypes\ServerType.cs" />
+    <Compile Include="CommonTypes\ServiceCred.cs" />
+    <Compile Include="CommonTypes\VmInstance.cs" />
+    <Compile Include="CommonTypes\VmPowerState.cs" />
+    <Compile Include="CommonTypes\XenServerInfo.cs" />
+    <Compile Include="ConversionClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="SessionFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinServer\WinServer.csproj">
+      <Project>{a00230dd-cd86-4348-a6d6-e77d2e40a11a}</Project>
+      <Name>WinServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
