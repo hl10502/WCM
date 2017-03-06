@@ -299,16 +299,69 @@
             try
             {
                 Session session = OpenSessionAndLogin(hostInfo);
-                List<XenRef<Host>> list2 = Host.get_all(session);
-                foreach (XenRef<PBD> ref2 in Host.get_record(session, list2[0]).PBDs)
+
+                Pool pool = null;
+                string masterHostRef = null;
+                List<XenRef<Pool>> poolList = Pool.get_all(session);
+                if (list.Count > 0)
                 {
-                    XenRef<WinAPI.SR> ref3 = PBD.get_SR(session, (string) ref2);
-                    WinAPI.SR sr = WinAPI.SR.get_record(session, (string) ref3);
-                    if ((this.IsValidSR(sr) && ((list2.Count < 2) || this.IsSharedSR(sr))) && (sr.physical_size > 0L))
+                    pool = Pool.get_record(session, poolList[0]);
+                }
+                if (pool == null || pool.master == null)
+                {
+                    masterHostRef = session.get_this_host();
+                }
+                else
+                {
+                    masterHostRef = (string)pool.master;
+                }
+
+
+                List<XenRef<SR>> srRefs = SR.get_all(session);
+                foreach (XenRef<SR> srRef in srRefs)
+                {
+                    SR sr = SR.get_record(session, (string)srRef);
+                    bool allCurrentlyAttached = true;
+                    bool isOtherLocalSr = false;
+                    List<XenRef<PBD>> pbdRefs = SR.get_PBDs(session, (string)srRef);
+                    foreach (XenRef<PBD> pbdRef in pbdRefs)
+                    {
+                        PBD pbd = PBD.get_record(session, (string)pbdRef);
+                        bool currentlyAttached = pbd.currently_attached;
+                        if (!currentlyAttached)
+                        {
+                            allCurrentlyAttached = false;
+                            break;
+                        }
+
+                        string hostRef = (string)pbd.host;
+                        if (!sr.shared && !hostRef.Equals(masterHostRef))
+                        {
+                            isOtherLocalSr = true; //非master主机的本地存储池
+                            break;
+                        }
+                    }
+                    if (!allCurrentlyAttached)
+                    {
+                        continue;
+                    }
+
+                    if (!isOtherLocalSr && this.IsValidSR(sr) && sr.physical_size > 0L && sr.physical_size - sr.physical_utilisation > 0L)
                     {
                         list.Add(sr);
                     }
                 }
+
+                //List<XenRef<Host>> list2 = Host.get_all(session);
+                //foreach (XenRef<PBD> ref2 in Host.get_record(session, list2[0]).PBDs)
+                //{
+                //    XenRef<WinAPI.SR> ref3 = PBD.get_SR(session, (string) ref2);
+                //    WinAPI.SR sr = WinAPI.SR.get_record(session, (string) ref3);
+                //    if ((this.IsValidSR(sr) && ((list2.Count < 2) || this.IsSharedSR(sr))) && (sr.physical_size > 0L))
+                //    {
+                //        list.Add(sr);
+                //    }
+                //}
             }
             catch (Exception exception)
             {
@@ -446,11 +499,17 @@
 
         private bool IsValidSR(WinAPI.SR sr)
         {
-            if (sr.content_type == "iso")
+            //if (sr.content_type == "iso")
+            //{
+            //    return false;
+            //}
+            //return true;
+            //五种类型 nfs ext lvm lvmhba lvmoiscsi
+            if ("nfs".Equals(sr.type) || "ext".Equals(sr.type) || (!String.IsNullOrEmpty(sr.type) && sr.type.IndexOf("lvm") >= 0))
             {
-                return false;
+                return true;
             }
-            return true;
+            return false;
         }
 
         private static Session OpenSessionAndLogin(ServerInfo hostInfo)
