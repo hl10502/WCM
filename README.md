@@ -1,6 +1,6 @@
 # WCM
 
-WCM是V2V转换器的客户端工具，可以将VMware的虚拟机转换到XenServer主机上。WCM转换虚拟机不会删除或更改现有的VMware环境。
+WCM是V2V转换器的客户端工具，可以将VMware的虚拟机离线转换到XenServer主机上。WCM转换虚拟机不会删除或更改现有的VMware环境。
 
 目前版本V2.0。
 
@@ -26,6 +26,6 @@ V1.0
 
 * 初始版本
 * 支持中文
-* 发布时间2015.4，可能不支持2015.4之后发布的操作系统，比如redhat7
+* 离线转换VMware虚拟机到XenServer
 
 
