@@ -29,3 +29,23 @@ V1.0
 * 离线转换VMware虚拟机到XenServer
 
 
+## WCM分析
+
+[V2V转换器（一）——XenServer Conversion Manager](http://www.hl10502.com/2017/02/28/v2v-1/)
+
+[V2V转换器（二）——XenServer Conversion Manager Virtual Appliance虚拟机配置](http://www.hl10502.com/2017/02/28/v2v-2/)
+
+[V2V转换器（三）——XenServer Conversion Manager Virtual Appliance转换服务convsvc配置](http://www.hl10502.com/2017/02/28/v2v-3/)
+
+[V2V转换器（四）——XenServer Conversion Manager Virtual Appliance虚拟机网络修改](http://www.hl10502.com/2017/02/28/v2v-4/)
+
+[V2V转换器（五）——ERROR Credentials for user 'root' are invalid on http://169.254.0.1](http://www.hl10502.com/2017/02/28/v2v-5/)
+
+[V2V转换器（六）——Unable to Boot VMware SCSI Disk](http://www.hl10502.com/2017/03/07/v2v-6/)
+
+[V2V转换器（七）——V2V服务端分析之convsvc](http://www.hl10502.com/2017/03/07/v2v-7/)
+
+[V2V转换器（八）——V2V服务端分析之Converter](hhttp://www.hl10502.com/2017/03/08/v2v-8/)
+
+
+
